@@ -9,9 +9,9 @@ public class Horario {
     private String lugar;
     private int numeroCita;
 
-    private ArrayList<Horario> horarios = new ArrayList<>();
-    private  ArrayList<Horario> horariosList = new ArrayList<>();
-    public  ArrayList<Horario> getHorariosList() {
+    private static ArrayList<Horario> horarios = new ArrayList<>();
+    private static ArrayList<Horario> horariosList = new ArrayList<>();
+    public static ArrayList<Horario> getHorariosList() {
         return horarios;
     }
 

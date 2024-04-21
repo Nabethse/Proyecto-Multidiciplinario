@@ -10,8 +10,7 @@ public class Casos {
     private String informacion;
     private int numerocaso;
 
-
-    private ArrayList<Casos> casosList = new ArrayList<>();
+    private static ArrayList<Casos> casosList = new ArrayList<>();
 
     public Casos(String nombreCaso, String tipoCaso, String nombreAbogado, String informacion, int numerocaso) {
         this.nombreCaso = nombreCaso;
@@ -65,14 +64,14 @@ public class Casos {
         return casosList.add(this);
     }
 
-    public ArrayList<Casos> getCasosList() {
+    public static ArrayList<Casos> getCasosList() {
         return casosList;
     }
     @Override
     public String toString() {
         return "Nombre del caso: " + nombreCaso + ", Tipo de caso: " + tipoCaso + ", Nombre del abogado: " + nombreAbogado + ", Información: " + informacion + ", Número de caso: " + numerocaso;
     }
-    public void eliminarCaso(Casos caso) {
+    public static void eliminarCaso(Casos caso) {
         casosList.remove(caso);
     }
 
